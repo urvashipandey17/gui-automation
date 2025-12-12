@@ -27,7 +27,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright + Cucumber tests
-        run: npm run cucumber || true
+        run: npm run cucumber
 
       # Upload Cucumber report
       - name: Upload Cucumber HTML report

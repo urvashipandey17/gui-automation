@@ -9,6 +9,8 @@ export class ServiceNSWPage {
 
   constructor(page: Page) {
     this.page = page;
+    this.page.setDefaultTimeout(30000);
+    this.page.setDefaultNavigationTimeout(30000);
     this.vehicleRegistrationsTile = page.locator('div.tile__heading:has-text("Check motor vehicle stamp duty")');
     this.checkOnlineButton = page.getByRole('button', { name : /^Check online/ });
   }

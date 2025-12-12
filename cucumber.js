@@ -10,5 +10,5 @@ module.exports = {
     'progress',
     'html:reports/cucumber-report.html'
   ],
-  defaultTimeout: 30000
+  timeout: 30000
 };

@@ -8,12 +8,12 @@ let page: Page;
 
 Before(async function () {
   browser = await chromium.launch({
-    channel: 'chrome', // use real Chrome
-    headless: false,
+    channel: 'chrome', 
+    headless: true,
   });
   context = await browser.newContext();
   page = await context.newPage();
-  this.page = page; // attach to Cucumber world
+  this.page = page; 
 });
 
 After(async function () {

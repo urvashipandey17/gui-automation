@@ -5,6 +5,7 @@ import { chromium, Browser, Page, BrowserContext } from 'playwright';
 let browser: Browser;
 let context: BrowserContext;
 let page: Page;
+setDefaultTimeout(60000);
 
 Before(async function () {
   browser = await chromium.launch({

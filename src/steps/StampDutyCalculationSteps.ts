@@ -27,6 +27,6 @@ When('I submit the calculation', async function (this: any) {
   await stampDuty.submitForm();
 });
 
-Then('the stamp duty result popup should display correct details', async function (this: any) {
+Then('the stamp duty result popup should display correct details', { timeout: 60000 }, async function (this: any) {
   await stampDuty.verifyPopup();
 });

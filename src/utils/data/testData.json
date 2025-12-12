@@ -1,0 +1,16 @@
+{
+  "stampDuty": {
+    "businessPurchase": {
+      "vehicleTypePassenger": "Yes",
+      "vehiclePurchasePrice": "95000",
+      "expectedPopup": {
+        "modalTitle": "Calculation",
+        "sectionTitle": "Motor vehicle registration",
+        "isPassengerVehicle": "Yes",
+        "purchasePrice": "$95,000.00",
+        "dutyPayable": "$3,850.00",
+        "contactUsUrl": "https://www.revenue.nsw.gov.au/contact"
+      }
+    }
+  }
+}

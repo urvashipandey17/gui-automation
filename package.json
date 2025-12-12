@@ -1,0 +1,20 @@
+{
+  "name": "task-2-gui-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cucumber": "node_modules/.bin/cucumber-js 'features/**/*.feature' --require-module ts-node/register --require 'src/steps/**/*.ts' --format html:reports/cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.3.0",
+    "@cucumber/html-formatter": "^22.2.0",
+    "@playwright/test": "^1.57.0",
+    "playwright": "^1.57.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

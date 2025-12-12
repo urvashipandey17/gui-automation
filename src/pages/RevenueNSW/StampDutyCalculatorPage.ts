@@ -20,6 +20,8 @@ export class StampDutyCalculatorPage {
 
   constructor(page: Page) {
     this.page = page;
+    this.page.setDefaultTimeout(30000);
+    this.page.setDefaultNavigationTimeout(30000);
 
     // Form locators
     this.vehiclePurchasePrice = page.locator('#purchasePrice');

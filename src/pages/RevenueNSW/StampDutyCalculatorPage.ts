@@ -53,13 +53,18 @@ export class StampDutyCalculatorPage {
   }
 
   async submitForm() {
+    await expect(this.calculateButton).toBeVisible({ timeout: 30000 });
+    await expect(this.calculateButton).toBeEnabled({ timeout: 30000 });
+    await this.page.waitForTimeout(10000);
+    console.log('Clicking Calculate button...');
     await this.calculateButton.click();
+    console.log('Clicked! Waiting for popup...');
   }
 
   async verifyPopup() {
     const expected = this.data.expectedPopup;
     await expect(this.modal).toBeVisible({ timeout: 30000 });
-    //await expect(this.modalTitle).toHaveText(expected.modalTitle);
+    await expect(this.modalTitle).toHaveText(expected.modalTitle);
     await expect(this.sectionTitle).toHaveText(expected.sectionTitle);
     await expect(this.isPassengerVehicle).toHaveText(expected.isPassengerVehicle);
     await expect(this.purchasePrice).toHaveText(expected.purchasePrice);

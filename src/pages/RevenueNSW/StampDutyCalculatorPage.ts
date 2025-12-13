@@ -58,7 +58,7 @@ export class StampDutyCalculatorPage {
 
   async verifyPopup() {
     const expected = this.data.expectedPopup;
-
+    await this.modal.waitFor({ state: 'visible', timeout: 30000 });
     await expect(this.modalTitle).toHaveText(expected.modalTitle);
     await expect(this.sectionTitle).toHaveText(expected.sectionTitle);
     await expect(this.isPassengerVehicle).toHaveText(expected.isPassengerVehicle);

@@ -4,7 +4,7 @@ module.exports = {
     'src/steps/hooks.ts', // hooks first
     'src/steps/**/*.ts'   // then step definitions
   ],
-  //paths: ['features/**/*.feature'],
+  paths: ['features/**/*.feature'],
   publishQuiet: true,
   format: [
     'progress',

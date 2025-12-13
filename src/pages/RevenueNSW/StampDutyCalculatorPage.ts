@@ -28,7 +28,7 @@ export class StampDutyCalculatorPage {
     this.calculateButton = page.getByRole('button', { name: 'Calculate' });
 
     // Popup locators
-    this.modal = page.locator('div.confirm-modal.show .modal-content'); // update with actual selector
+    this.modal = page.locator('div.confirm-modal.show .modal-content'); 
     this.modalTitle = this.modal.locator('.modal-title');
     this.sectionTitle = this.modal.locator('tbody h4');
     this.isPassengerVehicle = this.modal.locator('tr:has(td:text("passenger vehicle")) td.right');

@@ -1,8 +1,8 @@
 module.exports = {
-  requireModule: ['ts-node/register'], // MUST be first
+  requireModule: ['ts-node/register'], 
   require: [
-    'src/steps/hooks.ts', // hooks first
-    'src/steps/**/*.ts'   // then step definitions
+    'src/steps/hooks.ts', 
+    'src/steps/**/*.ts'   
   ],
   paths: ['features/**/*.feature'],
   publishQuiet: true,

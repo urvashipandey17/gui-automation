@@ -1,4 +1,3 @@
-// src/steps/hooks.ts
 import { Before, After, setDefaultTimeout } from '@cucumber/cucumber';
 import { chromium, Browser, Page, BrowserContext } from 'playwright';
 

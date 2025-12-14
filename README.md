@@ -1,1 +1,1 @@
-This is my Gui automation project
+This is my Gui automation project.
